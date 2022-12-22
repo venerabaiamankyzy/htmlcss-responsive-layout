@@ -5,7 +5,11 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Responsive layout</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="./css/reset.css">
 	<link rel="stylesheet" href="./css/utils.css">
@@ -13,7 +17,160 @@
 </head>
 
 <body>
+	<header class="header-head">
+		<div class="container">
+			<nav class="dflex header-nav">
+				<div class="logo">
+					<a href="#">
+						<img src="./img/logo.png" alt="Logo">
+					</a>
+				</div>
 
+				
+				<div class="nav-links">
+					<ul>
+						<li>
+							<a href="#">Planning</a>
+						</li>
+						<li>
+							<a href="#">Testimonials</a>
+						</li>
+						<li>
+							<a href="#">Features</a>
+						</li>
+						<li>
+							<a href="#">About us</a>
+						</li>
+						<li>
+							<a href="#" id="btn">Get Started</a>
+						</li>
+						
+						
+					</ul>	
+				</div>
+
+				<div class="menu">
+					<div class="menu-line"></div>
+					<div class="menu-line"></div>
+					<div class="menu-line"></div>
+				</div>
+			</nav>
+		</div>
+
+	</header>
+	<main>
+		<section class="jumbotron">
+			<div class="container">
+				<div class="d-wrap mt40 ">
+					<div class="card large-card b-rad30 ">
+						<div class="desc">
+							<h3>Get a demo application</h3>
+							<p>Lorem ipsum dolor sit amet consecteur adipisicing elit. Ratione nobis, architecto ad dolore quod, facere totam quas recusandae blanditiis</p>
+							<a class="btn-blue" href="#">
+								<i class="fa-brands fa-apple col-w"></i>
+								App Store
+							</a>
+						</div>
+
+						<div id="phone" class="phone">
+							<img src="./img/phone.png" alt="Phone">
+						</div>
+					</div>
+					
+					<div class="card b-rad30 card-flex ">
+						<i class="fa-solid fa-file-code fa-4x pad_y-2"></i>
+						<h3>Clean code</h3>
+						<p class="">Lorem ipsum dolor sit amet consecteur adipisicing elit. Ratione nobis, architecto ad dolore quod, facere totam quas recusandae blanditiis</p>
+					</div>
+
+					<div class="card b-rad30 card-flex ">
+						<i class="fa-solid fa-compass-drafting fa-4x pad_y-2"></i>
+						<h3>Web Design</h3>
+						<p class="">Lorem ipsum dolor sit amet consecteur adipisicing elit. Ratione nobis, architecto ad dolore quod, facere totam quas recusandae blanditiis</p>
+					</div>
+
+					<div class="card b-rad30 card-flex ">
+						<i class="fa-solid fa-laptop-code fa-4x pad_y-2"></i> 
+						<h3>Development</h3>
+						<p class="">Lorem ipsum dolor sit amet consecteur adipisicing elit. Ratione nobis, architecto ad dolore quod, facere totam quas recusandae blanditiis</p>
+					</div>
+
+					<div class="card b-rad30 card-flex ">
+						<i class="fa-solid fa-bullhorn fa-4x pad_y-2"></i>
+						<h3>Branding</h3>
+						<p class="">Lorem ipsum dolor sit amet consecteur adipisicing elit. Ratione nobis, architecto ad dolore quod, facere totam quas recusandae blanditiis</p>
+					</div>
+
+				</div>
+
+				
+				
+				
+
+			</div>
+		</section>
+
+		<section class="planning">
+			<div class="container-small">
+				<div class="dflex-ai">
+					<div class="left-side w50">
+						<img src="./img/planning1.png" alt="">
+						<h3>Strategic Planning</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem aperiam, earum maxime ad vero id cumque perferendis possimus magnam. Vero odio id temporibus. Nulla libero aperiam voluptas delectus harum a aliquid soluta velit dolor.</p>
+					</div>
+
+					<div class="right-side ai-rig w50">
+						<div class="bg-rs">	
+							<img src="./img/planning2.png" alt="photo">
+						<h3>App Development</h3>
+						<p>Develop an on-demand app for your delivery business to reach your targeted customers without any interruption</p>
+						<span class="dflex-jc"><i class="fa-solid fa-arrow-down-long"></i></span>
+						</div>
+						
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section id="testimonials">
+			<div class="container">
+				<div class="testim-title">
+					<p>TESTIMONIALS</p>
+					<h2>We are committed expert partners</h2>
+					<p>We place huge on strong relotionship and have seen the benefit they bring to our business. Customer feedback is vital in helping us to get it right</p>
+				</div>
+
+				<div class="card-testimon">
+					<figure class="card-image">
+						<img src="./img/testimonial1.jpg" alt="photo">
+					</figure>
+					<div class="card-contents">
+						<p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae totam quae quibusdam, dolorum labore ipsum iusto laboriosam possimus distinctio, eligendi quisquam ipsa?"</p>
+						<p class="name">NAT REYNOLDS</p>
+					</div>
+				</div>
+				<div class="card-testimon">
+					<figure class="card-image">
+						<img src="./img/testimonial2.jpg" alt="photo">
+					</figure>
+					<div class="card-contents">
+						<p><i class="fa-solid fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae totam quae quibusdam, dolorum labore ipsum iusto laboriosam possimus distinctio, eligendi quisquam ipsa? <i class="fa-solid fa-quote-right"></i></p>
+						<p class="name">CELIA ALMEDA</p>
+					</div>
+				</div>
+				<div class="card-testimon">
+					<figure class="card-image rounded-50">
+						<img src="./img/testimonial3.jpg" alt="photo">
+					</figure>
+					<div class="card-contents">
+						<p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae totam quae quibusdam, dolorum labore ipsum iusto laboriosam possimus distinctio, eligendi quisquam ipsa?"</p>
+						<p class="name">BOB ROBERTS</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
 </body>
 
 </html>

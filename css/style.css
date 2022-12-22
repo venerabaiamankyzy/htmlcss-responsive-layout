@@ -1,0 +1,286 @@
+body {
+  font-family: 'Fredoka', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+
+
+/* HEADER */
+.header-nav {
+  padding: 10px 0;
+  color: var(--white);
+}
+
+.nav-links li a{
+  color: #c9e5fe;
+  padding: 0 10px;
+  font-size: 1rem;
+}
+
+.nav-links li {
+  padding: 0 10px;
+  color: #c9e5fe;
+}
+
+.logo img {
+  width: 80%;
+}
+
+/* JUMBOTRON */
+.card {
+  width: calc(100% / 3 - 20px);
+  background-color: var(--light-blue);
+  text-align: center;
+  border-radius: 20px;
+}
+
+.large-card {
+width: calc(100% / 3 * 2 - 20px);
+
+display: flex;
+flex-direction: row;
+}
+
+.desc {
+  line-height: 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 39px;
+  text-align: left;
+  align-items: flex-start;
+}
+
+.card-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+  padding: 25px;
+}
+
+.card h3 {
+  color: var(--blue);
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.card>i{
+  color: var(--blue);
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.card p{
+  color: #5a6e7f;
+  font-size: .9rem;
+  font-weight: 700;
+  line-height: 1.6rem;
+}
+
+.desc i {
+  padding: 0 5px;
+}
+
+.phone {
+  display: flex;
+  align-items: flex-end;
+}
+.phone img {
+  width: 75%;
+}
+
+.menu {
+  display: none;
+}
+
+.menu-line {
+  width: 20px;
+  height: 3px;
+  background-color: white;
+  margin-bottom: 3px;
+}
+
+/* PLANNING */
+.dflex-ai {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 68px;
+  padding: 50px 0;
+}
+
+.planning{
+  background-color: var(--violet);
+  margin-top: 80px;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left-side h3 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--white);
+  padding: 90px 0 40px 0;
+}
+
+.left-side p {
+  font-size: 1rem;
+  color: var(--white);
+  line-height: 1.6rem;
+}
+
+.right-side {
+  display: flex;
+  align-items: flex-end;
+}
+
+.ai-rig {
+  align-items: flex-end;
+}
+
+.right-side h3 {
+  font-size: 1.2rem;
+  font-weight: 900;
+  text-align: center;
+  padding: 2rem;
+}
+
+.right-side p {
+  font-size: .9rem;
+  line-height: 1.6rem;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.right-side span {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: var(--violet);
+  text-align: center;
+}
+.dflex-jc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right-side .bg-rs {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  border-radius: var(--br);
+  padding: 30px;
+  align-items: center;
+}
+.dflex-ai img{
+  width: 80%;
+}
+
+/* TESTIMONIALS */
+.testim-title p {
+	text-align: center;
+	font-size: 1.1rem;
+}
+
+.testim-title h2 {
+	text-align: center;
+	font-size: 3rem;
+	color: var(--violet);
+	font-weight: 700;
+  margin: 30px;
+}
+
+#testimonials {
+	margin: 80px 0;
+}
+
+#testimonials .card-testimon {
+	margin: 50px 0;
+	background-color: var(--violet);
+	display: flex;
+  width: 100%;
+  border-radius: 25px;
+}
+
+#testimonials .card-testimon .card-image img{
+	width: 350px;
+  height: 230px;
+  border-radius: 50%;
+  padding: 20px;
+  object-fit: cover;
+}
+
+
+#testimonials .card-testimon .card-contents {
+	flex-grow: 1;
+} 
+
+#testimonials .card-contents {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: var(--white);
+} 
+
+#testimonials .card-contents p{
+  color: var(--white);
+} 
+
+.card-contents p.name {
+  font-weight: 900;
+}
+
+
+
+@media all and (max-width: 760px) {
+  /* Header */
+
+  .container {
+    width: 700px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  /* JAMBOTRON */
+
+}
+
+@media all and (max-width: 480px) {
+  /* Header */
+
+  .container {
+    width: 400px;
+  }
+  .d-wrap, 
+  .card {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+  
+ /* JAMBOTRON */
+  .phone img {
+    width: 80%;
+    text-align: center;
+  }
+
+ 
+
+}
