@@ -6,6 +6,7 @@
 	--yellow:#fdc15f;
 	--black:rgb(41, 41, 41);
 	--white: #fefeff;
+	--yellow: #fcc061;
 	--p: #969696;
 }
 
@@ -34,6 +35,19 @@
 	font-size: .8rem;
 }	
 
+.btn-footer {
+	display: inline-block;
+	background-color: white;
+	color: var(--violet);
+	border: 1px solid transparent;
+	border-radius: 30px;
+	padding: 20px 80px;
+	text-decoration: none;
+	font-size: 1rem;
+	font-weight: 600;
+	letter-spacing: .2rem;
+}	
+
 
 .btn-blue{
 	background-color: var(--blue);
@@ -56,8 +70,8 @@
 	text-decoration: none;
 	display: inline-block;
 	border-radius: 22px;
-	padding: 6px 40px;
-	font-size: .9rem;
+	padding: 6px 20px;
+	font-size: .8rem;
 	letter-spacing: .1rem;
 	font-weight: 600;
 	text-align: center;
@@ -114,11 +128,39 @@ a{
 }
 
 .container-small{
-  max-width: 900px;
+  max-width: 950px;
   padding: 0 20px;
   margin: 0 auto;
 }
 
+.container-mini {
+	max-width: 600px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 2rem;
+}
+
 .g20 {
 	gap: 20px;
+}
+
+.g30 {
+	gap: 30px;
+}
+
+.g40 {
+	gap: 40px;
+}
+
+.col-70 {
+	width: 70%;
+	padding: 0 15px;
+}
+.col-30 {
+	width: 30%;
+	padding: 0 15px;
+}
+
+.text-center {
+text-align: center;
 }

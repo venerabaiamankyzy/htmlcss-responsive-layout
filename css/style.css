@@ -109,7 +109,7 @@ flex-direction: row;
   padding: 50px 0;
 }
 
-.planning{
+#planning{
   background-color: var(--violet);
   margin-top: 80px;
 }
@@ -278,6 +278,105 @@ flex-direction: row;
   color: var(--p);
   margin: 20px 0;
 }
+
+/* ABOUT */
+
+#about .about-left h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--violet)
+}
+
+.about-sec {
+  margin: 60px 0; 
+}
+
+#about .about-left p {
+  font-size: 1rem;
+  line-height: 2rem;
+  margin-right: 35px;
+}
+.about-right {
+  position: relative;
+}
+
+#about .about-right img {
+ border-radius: 50%;
+ width: 80%;
+}
+#about div.about-right i:nth-child(2) {
+ color: var(--violet);
+ font-size: 4rem;
+ position: absolute;
+ right: 40px;
+}
+
+#about .about-right p {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--violet);
+  line-height: 1.8rem;
+  margin: 20px 20px 20px 0; 
+}
+
+#price {
+  background-color: var(--violet);
+  padding: 3rem 0;
+  color: white;
+}
+
+#price h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 2rem 0;
+}
+
+#price .free {
+  font-size: 4rem;
+  color: var(--yellow);
+  font-weight: 700;
+}
+
+#price p {
+  margin: 2rem 0;
+  font-size: 1rem;
+}
+
+#footer {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 2rem 0;
+}
+
+#footer p {
+  font-size: .8rem;
+  padding: 0 2rem;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.footer-container {
+  justify-content: center;
+}
+
+#footer a {
+  color: var(--violet);
+  text-decoration: underline;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media all and (max-width: 760px) {
   /* Header */
 
@@ -294,6 +393,35 @@ flex-direction: row;
   }
 
   /* JAMBOTRON */
+  /* CARDS */
+
+	#cards .card:first-child {
+		display: block;
+	}
+
+	#cards .card:first-child>.col-50 {
+		width: 100%;
+	}
+
+	/* PLANNING  */
+
+	#planning>.container>.row {
+		flex-wrap: wrap;
+	}
+
+	#planning>.container>.row>.col-40 {
+		width: 100%;
+	}
+
+	#planning .card {
+		margin: 30px 0;
+	}
+
+	/* BENEFITS */
+
+	#benefits .card {
+		width: 50%;
+	}
 
 }
 
@@ -321,8 +449,42 @@ flex-direction: row;
  /* JAMBOTRON */
   .phone img {
     width: 80%;
-    text-align: center;
+    justify-content: center;
   }
+
+  /* TESTIMONIALS */
+
+	#testimonials .card {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	#testimonials .card .card-image {
+		width: 50vw;
+		height: 50vw;
+		margin: 15px 0;
+	}
+
+	#testimonials .card .card-contents {
+		width: 100%;
+	}
+
+	/* BENEFITS */
+
+	#benefits .card {
+		width: 100%;
+	}
+
+	/* ABOUT */
+
+	#about>.container>.row {
+		flex-wrap: wrap;
+	}
+
+	#about>.container>.row>.col-70,
+	#about>.container>.row>.col-30 {
+		width: 100%;
+	}
 
  
 
